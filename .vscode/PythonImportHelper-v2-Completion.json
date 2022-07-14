@@ -98,7 +98,7 @@
         "kind": 5,
         "importPath": "sholah_inventory.settings",
         "description": "sholah_inventory.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "sholah_inventory.settings",
         "documentation": {}
     },
@@ -107,7 +107,7 @@
         "kind": 5,
         "importPath": "sholah_inventory.settings",
         "description": "sholah_inventory.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'accounts',\n]",
         "detail": "sholah_inventory.settings",
         "documentation": {}
     },
@@ -143,7 +143,7 @@
         "kind": 5,
         "importPath": "sholah_inventory.settings",
         "description": "sholah_inventory.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'sholah_inventory.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'sholah_inventory.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',",
         "detail": "sholah_inventory.settings",
         "documentation": {}
     },
@@ -152,7 +152,7 @@
         "kind": 5,
         "importPath": "sholah_inventory.settings",
         "description": "sholah_inventory.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    # 'default': {\n    #     'ENGINE': 'django.db.backends.sqlite3',\n    #     'NAME': BASE_DIR / 'db.sqlite3',\n    # }\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'sholah_inventory',\n        'USER': 'postgres',\n        'PASSWORD': 'Lojain@123',",
         "detail": "sholah_inventory.settings",
         "documentation": {}
     },
